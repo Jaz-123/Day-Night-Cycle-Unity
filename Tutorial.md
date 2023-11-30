@@ -59,7 +59,7 @@ These variables keep track of data we need in the backend
     }
 ```
 
-
+We just start at the time that we specify, taking out the `+ TimeSpan.FromHours(startHour)` will start the game under the current time.
 
 ### Update Function
 
@@ -71,6 +71,8 @@ These variables keep track of data we need in the backend
         UpdateLightSettings();
     }
 ```
+
+Here we just call the functions `UpdateTimeOfDay()`, `RotateSun()` and `UpdateLightSettings()`.
 
 ### UpdateTimeOfDay Function
 
@@ -85,6 +87,10 @@ These variables keep track of data we need in the backend
         }
     }
 ```
+
+Here we just add to out current time by `Time.deltaTime`, this increments by realtime.
+
+By adding the `* timeMultiplier`, this lets us speed up time to our liking.
 
 ### RotateSun Function
 
