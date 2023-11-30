@@ -20,6 +20,29 @@ Open your `TimeController` script.
 
 #### Public Variables
 
+```.cs
+    public float timeMultiplier;
+    public float startHour;
+    public TextMeshProUGUI timeText;
+    public Light sunLight;
+    public float sunriseHour;
+    public float sunsetHour;
+    public Color dayAmbientLight;
+    public Color nightAmbientLight;
+    public AnimationCurve lightChangeCurve;
+    public float maxSunLightIntensity;
+    public Light moonLight;
+    public float maxMoonLightIntensity;
+```
+
+#### Private Variables
+
+```.cs
+    private DateTime currentTime;
+    private TimeSpan sunriseTime;
+    private TimeSpan sunsetTime;
+```
+
 ### Start Function
 
 ### Update Function
