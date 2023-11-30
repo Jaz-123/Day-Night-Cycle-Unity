@@ -35,6 +35,8 @@ Open your `TimeController` script.
     public float maxMoonLightIntensity;
 ```
 
+These variables control the basic functionality of the script
+
 #### Private Variables
 
 ```.cs
@@ -42,6 +44,8 @@ Open your `TimeController` script.
     private TimeSpan sunriseTime;
     private TimeSpan sunsetTime;
 ```
+
+These variables keep track of data we need in the backend
 
 ### Start Function
 
@@ -54,6 +58,8 @@ Open your `TimeController` script.
         sunsetTime = TimeSpan.FromHours(sunsetHour);
     }
 ```
+
+
 
 ### Update Function
 
