@@ -122,6 +122,10 @@ By adding the `* timeMultiplier`, this lets us speed up time to our liking.
     }
 ```
 
+Here we calculate the required rotaion of the sun dependent on the time.
+
+We call the function `CalculateTimeDifference()` to get a max and min value for time and then apply this to the rotaion.
+
 ### UpdateLightSettings Function
 
 ```.cs
@@ -133,6 +137,8 @@ By adding the `* timeMultiplier`, this lets us speed up time to our liking.
         RenderSettings.ambientLight = Color.Lerp(nightAmbientLight, dayAmbientLight, lightChangeCurve.Evaluate(dotProduct));
     }
 ```
+
+Here we apply the correct values for light intensity dependent on time and a user specified light curve.
 
 ### CalculateTimeDifference Function
 
@@ -149,6 +155,10 @@ By adding the `* timeMultiplier`, this lets us speed up time to our liking.
         return difference;
     }
 ```
+
+Here we just calculate the time difference from `fromTime` and `toTime` which are given by the sunrise and sunset times.
+
+We then just return the difference between the 2 times.
 
 ## 3. Finish Setup In Unity
 
