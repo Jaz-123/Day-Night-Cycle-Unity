@@ -18,6 +18,8 @@ Open your `TimeController` script.
 
 ### Refrences
 
+#### Public Variables
+
 ### Start Function
 
 ### Update Function
@@ -31,3 +33,7 @@ Open your `TimeController` script.
 ### CalculateTimeDifference Function
 
 ## 3. Finish Setup In Unity
+
+Change the values of the script to your liking and make sure you assign the correct objects to the correct variables.
+
+Now hit play and make sure you have no errors.

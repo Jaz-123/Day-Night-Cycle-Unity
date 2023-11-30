@@ -3,30 +3,18 @@ using UnityEngine;
 using TMPro;
 public class TimeController : MonoBehaviour
 {
-    [SerializeField]
-    private float timeMultiplier;
-    [SerializeField]
-    private float startHour;
-    [SerializeField]
-    private TextMeshProUGUI timeText;
-    [SerializeField]
-    private Light sunLight;
-    [SerializeField]
-    private float sunriseHour;
-    [SerializeField]
-    private float sunsetHour;
-    [SerializeField]
-    private Color dayAmbientLight;
-    [SerializeField]
-    private Color nightAmbientLight;
-    [SerializeField]
-    private AnimationCurve lightChangeCurve;
-    [SerializeField]
-    private float maxSunLightIntensity;
-    [SerializeField]
-    private Light moonLight;
-    [SerializeField]
-    private float maxMoonLightIntensity;
+    public float timeMultiplier;
+    public float startHour;
+    public TextMeshProUGUI timeText;
+    public Light sunLight;
+    public float sunriseHour;
+    public float sunsetHour;
+    public Color dayAmbientLight;
+    public Color nightAmbientLight;
+    public AnimationCurve lightChangeCurve;
+    public float maxSunLightIntensity;
+    public Light moonLight;
+    public float maxMoonLightIntensity;
 
     private DateTime currentTime;
     private TimeSpan sunriseTime;
